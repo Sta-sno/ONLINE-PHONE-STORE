@@ -58,6 +58,7 @@ html, body {
     padding-bottom: 55px;
 }
 
+
 .band-name {
     text-align: center;
     margin: 0;
@@ -96,7 +97,7 @@ html, body {
     border-radius: 50%;
 }
 
-.main-footer {
+/*.main-footer {
     background-color: #56CCF2;
     color: white;
     padding: .25em 0;
@@ -121,6 +122,27 @@ html, body {
     height: 30px;
 }
 
+ul {
+    display: flex;
+    flex-direction: row;
+                }
+      
+li {
+    list-style-type: none;
+    float: left;
+    margin: 320px 0 0 0;
+    padding: 10px 0 0 0;
+        }
+        
+li i {
+      font-size: 18px;
+      /*display: block;
+      color: white;
+      text-align: center;
+      padding: 25px 180px;
+      text-decoration: none;
+        }*/
+
 .btn {
     text-align: center;
     vertical-align: middle;
@@ -128,7 +150,7 @@ html, body {
     cursor: pointer;
 }
 
-.btn-header {
+/*.btn-header {
     margin: .5em 15% 2em 15%;
     color: white;
     border: 2px solid #2D9CDB;
@@ -142,12 +164,11 @@ html, body {
 
 .btn-header:hover {
     background-color: rgba(255, 255, 255, .3);
-}
+}*/
 
 .btn-play {
     display: block;
     margin: 0 auto;
-    color: #2D9CDB;
     font-size: 4em;
     border-radius: 50%;
     width: 100px;
@@ -158,14 +179,14 @@ html, body {
 
 .btn-primary {
     color: white;
-    background-color: #56CCF2;
+    background-color: black;
     border: none;
     border-radius: .3em;
     font-weight: bold;
 }
 
 .btn-primary:hover {
-    background-color: #2D9CDB;
+    background-color: #ff0340;
 }
 
 .tour-row {

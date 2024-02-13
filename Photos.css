@@ -1,0 +1,129 @@
+html{
+background-color: #ff0340;
+}
+
+div.specific{
+       border: 3px solid black;
+}
+
+div.specific img {
+     border-radius: 100px;
+}
+
+/*#main{
+  position: relative;
+}
+
+#specific{
+  position: absolute;
+  top: 50%;
+  left: 60%;
+}*/
+
+div.name {
+  padding: 15px;
+  text-align: center;
+  font-size: 25px;
+  color: aliceblue;
+}
+
+.description{
+  color: aliceblue;
+  text-align: center;
+}
+
+.comments{
+  color: aliceblue;
+  display: flex;
+  flex-direction: row;
+}
+
+.comment-image img{
+  border-radius: 400px;
+}
+
+div.details{
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0 0 410px;
+  }
+  a.details:link,a.details:visited{
+    color: aliceblue;
+  }
+
+.colors{
+    display: flex;
+    flex-direction: row;
+}
+
+  a:link,a:visited {
+    color: black;
+    padding: 10px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  #button {
+    display: inline-block;
+    padding: 15px 180px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #ff0340;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px white;
+  }
+  
+  #button:hover {background-color: pink}
+  
+  #button:active {
+    background-color: black;
+    box-shadow: 0 5px white;
+    transform: translateY(4px);
+  }
+
+  .container{
+    position: relative;
+  }
+
+.button{
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  padding: 0 3px;
+  width: 33.2333333333%;
+  margin-top: 150px;
+  margin-left: 50px;
+  margin-right: 150px;
+}
+
+@media only screen and (max-width: 700px) {
+  .main{
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -1,10 +1,32 @@
+<title>Home</title>
 <?php
 // Get the 4 most recently added products
+// Database connection parameters
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "shoppingcart";
+
+try {
+    // Create a PDO instance representing a connection to a database
+    $pdo = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+
+    // Set the PDO error mode to exception
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
 $stmt = $pdo->prepare('SELECT * FROM products ORDER BY date_added DESC LIMIT 4');
 $stmt->execute();
 $recently_added_products = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    
+} catch(PDOException $e) {
+    // If an error occurs, output the error message
+    echo "Error: " . $e->getMessage();
+}
+
+
 ?>
-<?=template_header('Home')?>
+
 
 <div class="featured">
     <h2>Online Phone Store</h2>
@@ -26,3 +48,5 @@ $recently_added_products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </div>
 
 <?=template_footer()?>
+
+
